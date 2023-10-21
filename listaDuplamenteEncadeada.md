@@ -1,14 +1,17 @@
 Uma **lista duplamente encadeada** é uma estrutura de dados na qual cada nó possui uma referência tanto para o nó anterior quanto para o próximo nó. Isso permite a travessia da lista em ambas as direções. 
 
 **Exibição dos Nós em uma Lista Duplamente Encadeada**
+```
 Nodo atual = primeiro_nodo
 Enquanto atual ≠ Nulo:
     Exibir valor de atual
     atual = atual.próximo
+```
 
 -------------
 
 **Busca de um Nó em uma Lista Duplamente Encadeada**
+```
 Função BuscarNodo(valor_buscado):
     Nodo atual = primeiro_nodo
     Enquanto atual ≠ Nulo:
@@ -16,10 +19,11 @@ Função BuscarNodo(valor_buscado):
             Retornar atual
         atual = atual.próximo
     Retornar Nulo
-
+```
 --------------
 
 **Inserção de um Nó em uma Lista Duplamente Encadeada**
+```
 Função InserirNodo(valor_inserir):
     Novo_nodo = CriarNodo(valor_inserir)
     Se lista_vazia:
@@ -41,10 +45,11 @@ Função InserirNodo(valor_inserir):
         Novo_nodo.próximo = atual
         atual.anterior.próximo = Novo_nodo
         atual.anterior = Novo_nodo
-
+```
 ---------------
 
 **Remoção de um Nó em uma Lista Duplamente Encadeada**
+```
 Função RemoverNodo(valor_remover):
     Nodo atual = BuscarNodo(valor_remover)
     Se atual ≠ Nulo:
@@ -56,7 +61,7 @@ Função RemoverNodo(valor_remover):
             atual.anterior.próximo = atual.próximo
             atual.próximo.anterior = atual.anterior
         Remover atual
-
+```
 
 
 
